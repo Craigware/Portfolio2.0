@@ -1,0 +1,64 @@
+
+#Content {
+  width: 400vw;
+}
+
+#Content > div {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+#Pushing {
+  background-color: #85baff;
+  border-left: 16px solid black;
+}
+
+#Landing {
+  background-color: #fcd944;
+}
+
+.cursor::after {
+  content: "";
+  margin: 2px;
+  border-left: 2px solid black;
+}
+
+.blinking::after {
+  animation: CursorBlink 1s step-start infinite;
+}
+
+@keyframes CursorBlink {
+  50% {
+    opacity: 0%;
+  }
+}
+
+#Landing h1 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  min-width: 25%;
+  min-height: 15%;
+  z-index: 10;
+}
+
+.highlighted {
+  background-color: blue;
+  color: white;
+}
+
+.dood {
+  position: absolute;
+}
+
+#ModelView {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  top:0;
+}
